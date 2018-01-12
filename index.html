@@ -11,13 +11,11 @@
       gtag('js', new Date());
 
       gtag('config', 'UA-112380144-1');
+     
+      gtag('event', 'page_view', { 'send_to': 'UA-112380144-1' });
       
-      //This does hash-click tracking (inspired by http://stackoverflow.com/a/4813223)
-      $(document).ready(function() {
-        $('.tocify-item a').on('click', function(){
-          ga('send', 'pageview', {'page': location.pathname + location.search  + location.hash});
-        });
-      });
+      
+      
     </script>
     
     <meta charset="utf-8">
